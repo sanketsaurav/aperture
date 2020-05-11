@@ -1,0 +1,17 @@
+version = 1
+
+test_patterns = [
+    "*_test.go",
+    "*/*_test.go"
+]
+
+[[analyzers]]
+name = "go"
+enabled = true
+
+  [analyzers.meta]
+  import_path = "github.com/lightninglabs/aperture"
+
+[[analyzers]]
+name = "docker"
+enabled = true
